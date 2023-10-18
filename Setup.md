@@ -1,12 +1,12 @@
-## Before working with Vagrant it's recommended that you have a package manager installed on your OS. A package manager is a software application that you can use to download packages like mysql, vagrant, git bash e.t.c.
+# Before working with Vagrant it's recommended that you have a package manager installed on your OS. A package manager is a software application that you can use to download packages like mysql, vagrant, git bash e.t.c.
 The benefit of having a manager is that you don't have to look for the correct downloads links and updated version on the internet. The manager handles that for you. All you have to do is to communicate through the CLI for what you wnat to do!
 
-## Installation
-# Windows: Chocolatey
+# Installation
+## Windows: Chocolatey
 
 Search for windows powershell, open it in administrator mode.
 
-# Mac: Homebrew
+## Mac: Homebrew
 * Go to [brew](https://docs.brew.sh/Installation) 
  !Check the MacOS requirements!
 
