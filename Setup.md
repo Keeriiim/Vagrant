@@ -5,6 +5,25 @@ The benefit of having a manager is that you don't have to look for the correct d
 ## Windows: Chocolatey
 * Search for windows powershell, right click and open it in administrator mode.
 * Type  
+Get-ExecutionPolicy
+
+* If you get Restricted type  
+ Set-ExecutionPolicy Bypass -Scope Process
+
+* Then  
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+* If you don't see any errors, all is complete !
+* 
+* Search for any software at [Chocolatey](https://community.chocolatey.org/packages)
+
+* Choco commands!
+  **Check the version** choco
+  **Install a package** choco install packageName
+  **Uninstall a package** choco uninstall packageName
+  **List all installed packages** choco list
+  **List all outdated packages** choco outdated
+  **Update all packages** choco upgrade all
 
 
 ## Mac: Homebrew
