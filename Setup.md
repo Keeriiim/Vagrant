@@ -1,5 +1,5 @@
-# Before working with Vagrant it's recommended that you have a package manager installed on your OS. A package manager is a software application that you can use to download tools like mysql, vagrant, git bash e.t.c.
-The benefit of having a manager is that you don't have to look for the correct download links and updated version on the internet. The manager handles that for you. All you have to do is to communicate through the CLI for what you want to do!
+# Before working with Vagrant, it's recommended to have a package manager installed on your operating system. A package manager is a software application that facilitates the downloading and management of packages, such as MySQL, Vagrant, Git Bash, and more..
+The benefit of using a package manager is that you don't have to search for correct download links and updated versions online. The manager handles these tasks for you. Your only task is to communicate your needs through the command-line interface (CLI)!
 
 # Installation
 ## Windows: Chocolatey
