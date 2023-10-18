@@ -71,3 +71,4 @@ vagrant init generic/centos9s
 * **Log into the VM** vagrant ssh
 * **Exit the VM** logout
 * **Reboot the VM** vagrant reload
+* **Show status for all Vms** vagrant global-status 
