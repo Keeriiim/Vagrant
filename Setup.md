@@ -10,17 +10,18 @@ Search for windows powershell, open it in administrator mode.
 * Go to [brew](https://docs.brew.sh/Installation) 
  !Check the MacOS requirements!
 
-* Open your cmd and type cd , then xcode-select --install
+* Open your terminal and type cd, then  
+xcode-select --install
 
 * Then  
 export HOMEBREW_BREW_GIT_REMOTE=https://github.com/Homebrew/brew.git  
 export HOMEBREW_CORE_GIT_REMOTE=https://github.com/Homebrew/homebrew-core.git  
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-* Write this to see if its finished to check the current version
+* Write this to see if its finished to check the current version  
   brew --version
 
-* Write this to download Vagrant
+* Write this to download Vagrant  
   brew install --cask vagrant
 
 
