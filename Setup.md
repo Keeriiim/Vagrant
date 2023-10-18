@@ -14,16 +14,16 @@ Get-ExecutionPolicy
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 * If you don't see any errors, all is complete !
-* 
+
 * Search for any software at [Chocolatey](https://community.chocolatey.org/packages)
 
-* Choco commands!
-  **Check the version** choco
-  **Install a package** choco install packageName
-  **Uninstall a package** choco uninstall packageName
-  **List all installed packages** choco list
-  **List all outdated packages** choco outdated
-  **Update all packages** choco upgrade all
+* Choco commands!  
+  **Check the version** choco  
+  **Install a package** choco install packageName  
+  **Uninstall a package** choco uninstall packageName  
+  **List all installed packages** choco list  
+  **List all outdated packages** choco outdated  
+  **Update all packages** choco upgrade all  
 
 
 ## Mac: Homebrew
