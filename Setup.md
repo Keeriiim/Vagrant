@@ -44,9 +44,9 @@ export HOMEBREW_CORE_GIT_REMOTE=https://github.com/Homebrew/homebrew-core.git
   
 
 # Installing Tools for Vagrant (Windows)
-choco install git
-choco install virtualbox
-choco install vagrant
+choco install git  
+choco install virtualbox  
+choco install vagrant  
 
 1. Go to your BIOS and enable Virtualization (VTx / Secure virtual machine / Virtualization)
 2. Search for Windows features -> disable Microsoft Hyperv, Windows Hypervisor platform, Windows Subsystem for linux, Docker Desktop, Virtual Machine Platform
