@@ -25,6 +25,8 @@ export HOMEBREW_CORE_GIT_REMOTE=https://github.com/Homebrew/homebrew-core.git
 * Write this to download Vagrant  
   brew install --cask vagrant
 
+* Go to [brew](https://brew.sh/) to and search to check other available packages
+
 
 [Vagrant](https://www.vagrantup.com/) is an open-source software product designed for building and managing portable virtual software development environments. These environments are utilized for software development, application testing, and software configuration in a reproducible and portable manner. Vagrant simplifies the process of creating, sharing, and replicating development environments through a user-friendly command-line interface.
 
