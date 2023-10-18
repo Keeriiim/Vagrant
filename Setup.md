@@ -3,8 +3,9 @@ The benefit of having a manager is that you don't have to look for the correct d
 
 # Installation
 ## Windows: Chocolatey
+* Search for windows powershell, right click and open it in administrator mode.
+* Type  
 
-Search for windows powershell, open it in administrator mode.
 
 ## Mac: Homebrew
 * Go to [brew](https://docs.brew.sh/Installation) 
