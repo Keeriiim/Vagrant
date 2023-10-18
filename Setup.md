@@ -16,12 +16,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 6. Search for any software at [Chocolatey](https://community.chocolatey.org/packages)
 
 **Choco commands!**  
-* **Check the version** choco
-* **Install a package** choco install packageName
-* **Uninstall a package** choco uninstall packageName
-* **List all installed packages** choco list
-* **List all outdated packages** choco outdated
-* **Update all packages** choco upgrade all  
+* **Check the version**           |   choco
+* **Install a package**           |   choco install packageName
+* **Uninstall a package**         |   choco uninstall packageName
+* **List all installed packages** |   choco list
+* **List all outdated packages**  |   choco outdated
+* **Update all packages**         |   choco upgrade all  
 
 
 ## Mac: Homebrew
