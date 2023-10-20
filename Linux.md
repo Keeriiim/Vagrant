@@ -2,7 +2,7 @@
 
 # Linux Commands
 **Commands Options Arguments** Structure is as follows, ex ls -a /temp  
-**Command -help** Shows all Options for the specific command
+**Command -help** Shows all Options for the specific command  
 **Relative path** Default path i.e your home folder, you can directly access folders within it, ex cd /Downloads  
 **Absolute path** The full path ex cd /users/JohnDoe/Downloads  
 **clear** Clears the terminal  
@@ -14,7 +14,9 @@
 **cp a b/** Copies file into directory/map b  
 **cp -r dev ops/** Copies dev directory into ops  
 **mv a b/** Moves file/directory  a into directory/map b  
-**mv -r dev ops/** Copies dev directory into ops 
+**mv a.txt b.txt** Moves/replaces the name a to b  
+**mv * ** Moves everything in the dir  
+**mv *.txt ** Moves all .txt files  
  
 
 
