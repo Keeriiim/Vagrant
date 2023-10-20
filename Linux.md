@@ -15,7 +15,7 @@
 **cp -r dev ops/** Copies dev directory into ops  
 **mv a b/** Moves file/directory  a into directory/map b  
 **mv a.txt b.txt** Moves/replaces the name a to b  
-**mv '*'** Moves everything in the dir  
+**mv "*"** Moves everything in the dir  
 **mv '*'.txt ** Moves all .txt files  
  
 
