@@ -1,6 +1,14 @@
 # Linux overview
 
-[Vagrant](https://www.vagrantup.com/) is an open-source software product designed for building and managing portable virtual software development environments. These environments are utilized for software development, application testing, and software configuration in a reproducible and portable manner. Vagrant simplifies the process of creating, sharing, and replicating development environments through a user-friendly command-line interface.
+# Linux Commands
+**mkdir a** Creates a directory/map
+**rmdir a** Deletes a directory/map
+**touch file.txt** Creates a file  
+**rm file.txt** Deletes a file
+**cp a /b** Copies file a to directory/map b  
+**clear** Clears the terminal  
+**pwd** Shows current directory location
+
 
 ## Key Features and Concepts
 
