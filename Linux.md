@@ -18,6 +18,7 @@
 **mv a.txt b.txt** Moves/replaces the name a to b  
 **mv "*"** Moves everything in the dir  
 **mv "*".txt** Moves all .txt files  
+**History** See all prompted commands
  
 
 
