@@ -33,7 +33,16 @@
 
 ## Filetypes
 - Type ls -l to see filetype in current directory
+Xrwxr-xr-x. The first letter 'X' represents the filetype
 <img width="647" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/dd55fed5-2ef2-4c62-8e86-cdae0c44180a">
+
+## Links
+- Type ln -s + full path + shortcut name
+<img width="622" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/f0d9d778-0aac-4211-b595-f26065fda6fb">
+- If the file is missing
+<img width="634" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/38270cae-6379-4cb0-bd8f-309ea5542f44">
+
+
 
 
  
@@ -59,17 +68,4 @@
 **Undo change** u  
 **Search for a word and scroll through the list** /word , press  n for search
 
-
-
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/379c939b-66d9-4b9e-914d-701f21f3327a)
-
-
-- **Portable Environments:** Vagrant enables developers to create a single configuration file (Vagrantfile) describing the project's environment. This configuration can be shared and used across various machines and team members, ensuring consistent development environments.
-
-- **Virtualization Support:** Vagrant supports multiple virtualization providers, such as VirtualBox, VMware, and Hyper-V, offering flexibility for developers to work with their preferred technology.
-
-- **Provisioning:** Developers can automate the setup of software and configurations inside the virtual machine using tools like Puppet, Chef, or shell scripts, ensuring automatic provisioning of the environment.
-
-- **Networking:** Vagrant provides options for configuring network settings, allowing developers to expose specific ports, create private networks, or use public networks to make services inside the virtual machine accessible.
-
-
