@@ -25,6 +25,7 @@
 **mv "*".txt** Moves all .txt files  
 **History** See all prompted commands  
 **Os** cat /etc/os-release  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
 
  
 # Vim
@@ -33,11 +34,14 @@
 
 
 #Vim commands
-**Enter insert mode to write** Press i
-**Exit insert mode** Press esc
-**Save the file** Type :w
-**Exit the file** Press esc and type :q
-**Save & Exit** esc, then type :wq
+**Enter insert mode to write** Press i  
+**Exit insert mode** Press esc  
+**Save the file** Type :w  
+**Exit the file** Press esc and type :q  
+**Save & Exit** esc, then type :wq  
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/379c939b-66d9-4b9e-914d-701f21f3327a)
+
 
 - **Portable Environments:** Vagrant enables developers to create a single configuration file (Vagrantfile) describing the project's environment. This configuration can be shared and used across various machines and team members, ensuring consistent development environments.
 
@@ -47,4 +51,4 @@
 
 - **Networking:** Vagrant provides options for configuring network settings, allowing developers to expose specific ports, create private networks, or use public networks to make services inside the virtual machine accessible.
 
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
+
