@@ -39,6 +39,7 @@ Xrwxr-xr-x. The first letter 'X' represents the filetype
 ## Links
 - Type ln -s + full path + shortcut name
 <img width="622" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/f0d9d778-0aac-4211-b595-f26065fda6fb">
+
 - If the file is missing
 <img width="634" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/38270cae-6379-4cb0-bd8f-309ea5542f44">
 - Remove the link with unlink + linkName
