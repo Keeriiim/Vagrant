@@ -1,6 +1,11 @@
-# Linux overview
+# Linux Training
 
-# Linux Commands
+1. Go to your folder where you have the vagrantfile
+2. **Start the VM** Vagrant upp
+3. **Log into the VM** vagrant ssh
+4. **Download Vim** sudo yum install vim -y
+
+## Linux Commands
 **Commands Options Arguments** Structure is as follows, ex ls -a /temp  
 **Command -help** Shows all Options for the specific command  
 **Relative path** Default path i.e your home folder, you can directly access folders within it, ex cd /Downloads  
@@ -18,13 +23,21 @@
 **mv a.txt b.txt** Moves/replaces the name a to b  
 **mv "*"** Moves everything in the dir  
 **mv "*".txt** Moves all .txt files  
-**History** See all prompted commands
+**History** See all prompted commands  
+**Os** cat /etc/os-release  
+
  
+# Vim
+1. **Open a .txt file you created** vim file1.txt
+2. **Add text**
 
 
-
-
-## Key Features and Concepts
+#Vim commands
+**Enter insert mode to write** Press i
+**Exit insert mode** Press esc
+**Save the file** Type :w
+**Exit the file** Press esc and type :q
+**Save & Exit** esc, then type :wq
 
 - **Portable Environments:** Vagrant enables developers to create a single configuration file (Vagrantfile) describing the project's environment. This configuration can be shared and used across various machines and team members, ensuring consistent development environments.
 
