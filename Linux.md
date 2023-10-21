@@ -27,9 +27,14 @@
 **Os** cat /etc/os-release  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
 
+## Command List
+- Type ls + command withing a directory
+<img width="491" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/95c85cd6-06df-45d5-8ab1-2de7729e1cd5">
+
 ## Filetypes
-- Type ls -l to see filetypa in current directory
+- Type ls -l to see filetype in current directory
 <img width="647" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/dd55fed5-2ef2-4c62-8e86-cdae0c44180a">
+
 
  
 # Vim
