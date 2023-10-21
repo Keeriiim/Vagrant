@@ -1,7 +1,7 @@
 # Linux Training
 
 1. Go to your folder where you have the vagrantfile
-2. **Start the VM** Vagrant upp
+2. **Start the VM** vagrant up
 3. **Log into the VM** vagrant ssh
 4. **Download Vim** sudo yum install vim -y
 
@@ -27,6 +27,9 @@
 **Os** cat /etc/os-release  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
 
+## Filetypes
+<img width="647" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/dd55fed5-2ef2-4c62-8e86-cdae0c44180a">
+
  
 # Vim
 1. **Open a .txt file you created** vim file1.txt
@@ -39,6 +42,18 @@
 **Save the file** Type :w  
 **Exit the file** Press esc and type :q  
 **Save & Exit** esc, then type :wq  
+**Force quit without any change** :q!  
+**See number lines** :se nu  
+**Shortcut to line 1** gg
+**Shortcut to last line** shift+g
+**Copy line** yy  
+**Paste below current line** p     
+**Paste above current line** shift + p  
+**Delete/cut line** dd  
+**Undo change** u  
+**Search for a word and scroll through the list** /word , press  n for search
+
+
 
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/379c939b-66d9-4b9e-914d-701f21f3327a)
 
