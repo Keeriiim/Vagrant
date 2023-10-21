@@ -28,6 +28,7 @@
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
 
 ## Filetypes
+- Type ls -l to see filetypa in current directory
 <img width="647" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/dd55fed5-2ef2-4c62-8e86-cdae0c44180a">
 
  
