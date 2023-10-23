@@ -46,6 +46,35 @@ Xrwxr-xr-x. The first letter 'X' represents the filetype
 - Remove the link with unlink + linkName
 <img width="554" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/897c0a0d-0c18-4bdd-ba64-00ac22767e0d">
 
+## Filters
+If you need to look for a config to change, grep is useful for findning it.
+- **grep** is used to search for something
+- **grep -i** removes upper/lower case
+- **grep -R** used to search through directory
+- **grep -v** "show everything except" 
+- **star** means search all  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/eb931ae2-8714-4ed8-8a05-8224d2c513af)
+
+-**less file** Less is a reader that shows you the content of the file, you can move up/down with the arrows and you can use /word to search for a word in the reader
+-**more file** Same as less but move down with enter, use q to quit
+-**head -20 file** shows the first 20 lines in a file 
+-**tail -20 file** shows the last 20 lines in a file
+-**tail -f file** show the last rows with a dynamic update, good for troubleshooting server errors, you can track the log files, use one to track, another window to run commmands, ctrl + c to quit
+
+### Filter training
+- **cat /etc/passwd** Shows all users, rows are separated by :
+- **cut -d: -f1 /etx/passwd** Shows column one, f3 = userid, f4 = groupid
+- 
+ Cut only works with intelligent filters, else you have to use awk
+- **awk -F':' '{print $1}' /etc/passwd  
+
+Bonus
+- **sed 's/firstWord/secondWord/g' file.txt** Shows what the replace of the firstWord with the secondWord will look like
+- **sed -i 's/firstWord/secondWord/g' file.txt** Replaces the firstWord with the second
+
+
+#Redirection
+
 
 
 
