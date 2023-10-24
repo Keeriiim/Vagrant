@@ -73,7 +73,50 @@ Bonus
 - **sed -i 's/firstWord/secondWord/g' file.txt** Replaces the firstWord with the second
 
 
-#Redirection
+#Redirection ( > and >> )
+##Append / Overwrite
+- **echo "hello" > file.txt** Overwrites the content of the file with hello
+- **echo "hello" >> file.txt** Appends the content of the file with hello  
+
+An easy way of clearing the text on an entire file is to overwrite it with null. There is a null we can use at /dev/null
+- **cat /dev/null > /tmp/file.txt**
+
+## Outputs
+- **free -m 1>> /tmp/error.log** 1 is the default output, if the code succeeds it will redirect it to the file  
+- **free -m 2>> /tmp/error.log** 2 is for logging errors.
+- **free -m &>> /tmp/error.log** & is used for all  
+
+## Inputs  
+- **wc -l /etc/passwd** This will count the number of lines in the path  
+- **wc -l < /etc/passwd** This will works also  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/285228ea-2f71-4b9a-9fd6-9fe0a2143f27)
+
+## Piping
+Piping means that the output of something will go as an input for something  
+- **ls | wc -l** Counts all maps in the folder 
+- **ls | grep host** Prints all files named with host
+- **find / -name host'star'** Goes through all directories and looks for the name host
+
+# Users and Groups
+Every file in the system is owned by an user with an unique ID, and associated with a group  
+Every process has an owner and group affiliation, and can only access the resources its owner or group can access 
+User name & password is stored in /etc/passwd  
+Users have an assigned homedirectory and a program that run when they login, usually a shell  
+Users cannot read, write or execute each others files without permission  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a0f5c935-6344-4ce8-8734-10979e0e0cc4)  
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/1148daa2-f8ef-4e47-8eaf-2c176b356acc)  
+- **root** Username
+- **x** The link to shadowfile, which hold the password encrypted
+- **0:0** UserID, GroupID
+- **root** Comment
+- **/root** Homedirectory
+- **/bin/bash** Login Shell
+
+ ## Groups
+ - **cat /etc/group** Shows all created groups
+
+
 
 
 
