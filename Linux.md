@@ -28,7 +28,7 @@
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
 
 ## Command List
-- Type ls + command within a directory
+- **ls -Option** Displays the Options below
 <img width="491" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/95c85cd6-06df-45d5-8ab1-2de7729e1cd5">
 
 ## Filetypes
