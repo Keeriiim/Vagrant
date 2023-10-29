@@ -55,11 +55,11 @@ If you need to look for a config to change, grep is useful for findning it.
 - **star** means search all  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/eb931ae2-8714-4ed8-8a05-8224d2c513af)
 
--**less file** Less is a reader that shows you the content of the file, you can move up/down with the arrows and you can use /word to search for a word in the reader
--**more file** Same as less but move down with enter, use q to quit
--**head -20 file** shows the first 20 lines in a file 
--**tail -20 file** shows the last 20 lines in a file
--**tail -f file** show the last rows with a dynamic update, good for troubleshooting server errors, you can track the log files, use one to track, another window to run commmands, ctrl + c to quit
+- **less file** Less is a reader that shows you the content of the file, you can move up/down with the arrows and you can use /word to search for a word in the reader
+- **more file** Same as less but move down with enter, use q to quit
+- **head -20 file** shows the first 20 lines in a file 
+- **tail -20 file** shows the last 20 lines in a file
+- **tail -f file** show the last rows with a dynamic update, good for troubleshooting server errors, you can track the log files, use one to track, another window to run commmands, ctrl + c to quit
 
 ### Filter training
 - **cat /etc/passwd** Shows all users, rows are separated by :
