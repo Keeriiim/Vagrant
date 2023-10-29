@@ -1,4 +1,4 @@
-# Linux Training
+ls# Linux Training
 
 1. Go to your folder where you have the vagrantfile
 2. **vagrant up** Start the VM  
@@ -88,8 +88,10 @@ If you need to look for a config to change, grep is useful for findning it. Grep
 
 ### Filter training
 - **cat /etc/passwd** Shows all users, rows are separated by :
-- **cut -d: -f1 /etx/passwd** Shows column one, f3 = userid, f4 = groupid
-- 
+- **cut -d: -f1 /etc/passwd** Shows column one, f3 = userid, f4 = groupid  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/986c13cb-5dde-479f-841c-e81ba53acd2a)
+
+
  Cut only works with intelligent filters, else you have to use awk
 - **awk -F':' '{print $1}' /etc/passwd  
 
