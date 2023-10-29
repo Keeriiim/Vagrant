@@ -16,7 +16,7 @@
 **rmdir a** Deletes a directory/map  
 **touch file.txt** Creates a file  
 **rm file.txt** Deletes a file  
-**rm -r dir** Deletes a dir  
+**rm -rf dir** Deletes a dir with all it's content  
 **cp a b/** Copies file into directory/map b  
 **cp -r dev ops/** Copies dev directory into ops  
 **mv a b/** Moves file/directory  a into directory/map b  
