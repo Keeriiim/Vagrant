@@ -72,8 +72,8 @@ Xrwxr-xr-x. The first letter 'X' represents the filetype
 <img width="554" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/897c0a0d-0c18-4bdd-ba64-00ac22767e0d">
 
 ## Filters
-If you need to look for a config to change, grep is useful for findning it.
-- **grep** is used to search for something
+If you need to look for a config to change, grep is useful for findning it. Grep is using input redirection.  
+- **grep hello file.txt** is the same thing as grep hello < file.txt
 - **grep -i** removes upper/lower case
 - **grep -R** used to search through directory
 - **grep -v** "show everything except" 
