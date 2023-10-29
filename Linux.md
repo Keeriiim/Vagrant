@@ -24,7 +24,7 @@
 **mv "*"** Moves everything in the dir  
 **mv "*".txt** Moves all .txt files  
 **History** See all prompted commands  
-**Os** cat /etc/os-release  
+**cat /etc/os-release** Shows the OS    
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/174d8d21-3ca3-472e-883e-55f0b3c13b04)
 
 ## Command List
