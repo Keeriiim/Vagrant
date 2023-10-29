@@ -1,9 +1,9 @@
 # Linux Training
 
 1. Go to your folder where you have the vagrantfile
-2. **Start the VM** vagrant up
-3. **Log into the VM** vagrant ssh
-4. **Download Vim** sudo yum install vim -y
+2. **vagrant up** Start the VM  
+3. **vagrant ssh** Log into the VM  
+4. **sudo yum install vim -y** Download Vim    
 
 ## Linux Commands
 **Commands Options Arguments** Structure is as follows, ex ls -a /temp  
