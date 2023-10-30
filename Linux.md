@@ -1,4 +1,4 @@
-ls# Linux Training
+# Linux Training
 
 1. Go to your folder where you have the vagrantfile
 2. **vagrant up** Start the VM  
