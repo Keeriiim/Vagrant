@@ -58,6 +58,7 @@
 
 ## Filetypes & Permissions  
 There are in total 10 characters that can be assigned a value. First is the filetype, the rest are permissions for the specific directory/file/etc.
+Links are pointers, meaning the permission is shown for the link and not the actual file it points to.
 - Type ls -l to see filetype in current directory  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f27ea53c-60b2-4d89-bde3-76e4ad309611)
 - lrwxrwxrwx, The first letter 'l' represents the filetype  
