@@ -168,10 +168,26 @@ You need to be in root to create users and groups.
 - **useradd test** Adds an user named test
 - **groupadd testgroup** Adds a group named testgroup
 
-**Add an user to a group**
-There are two ways:
+**Add an user to a group**  
+There are two ways:  
 1. **vim /etc/group** Find the group you want to add users and add them manually
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d0765252-94d6-4c7e-984b-73ff5516d2a3)
+
 2. **usermod -aG testgroup test** Adds the user test directly to the testgroup
+
+**Add/change password and login to new user**
+- **passwd test** Adds/changes the password for the user test
+- **su - test** Logs in as the user test (only root will not need to know any password to log in)
+- **exit** Logout from user
+- **userdel -r test** Deletes test user and its home directory
+- **groupdel -r testgroup** Deletes test group
+
+##Useful commands
+- **last** Shows history of latest logins
+- **who** Shows current user
+- **lsof -u test** Lists all opened files by the user, the user needs to be logged in (yum install lsof -y)
+
+
 
 
 
