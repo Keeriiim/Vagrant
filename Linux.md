@@ -64,8 +64,8 @@ There are in total 10 characters that can be assigned a value. First if the file
 <img width="647" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/dd55fed5-2ef2-4c62-8e86-cdae0c44180a">
 
 - The next 3 rwx means the user can read, write and execute commands  
-- The next 3 means the user group user can read, not write and execute commands  
-- The next 3 means other users can read, not write and execute commands  
+- The next 3 means the user group user can read, write and execute commands  
+- The next 3 means other users can read, write and execute commands  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/b77d931f-aa01-4e62-af72-7ea7825f6726)  
 
 
