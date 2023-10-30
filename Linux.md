@@ -57,14 +57,14 @@
 <img width="491" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/95c85cd6-06df-45d5-8ab1-2de7729e1cd5">
 
 ## Filetypes & Permissions  
-There are in total 10 characters that can be assigned a value. First if the filetype, the rest are permissions.
+There are in total 10 characters that can be assigned a value. First is the filetype, the rest are permissions for the specific directory/file/etc.
 - Type ls -l to see filetype in current directory  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f27ea53c-60b2-4d89-bde3-76e4ad309611)
 - lrwxrwxrwx, The first letter 'l' represents the filetype  
 <img width="647" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/dd55fed5-2ef2-4c62-8e86-cdae0c44180a">
 
-- The next 3 rwx means the user can read, write and execute commands  
-- The next 3 means the user group user can read, write and execute commands  
+- The next 3 rwx means the user (root), can read, write and execute commands  
+- The next 3 means the user group user (root) can read, write and execute commands  
 - The next 3 means other users can read, write and execute commands  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/b77d931f-aa01-4e62-af72-7ea7825f6726)  
 
