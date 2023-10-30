@@ -98,6 +98,9 @@ If you need to look for a config to change, grep is useful for findning it. Grep
 Bonus
 - **sed 's/firstWord/secondWord/g' file.txt** Shows what the replace of the firstWord with the secondWord will look like
 - **sed -i 's/firstWord/secondWord/g' file.txt** Replaces the firstWord with the second
+Or you can use vim
+- **vim txtfile.txt** **%s/firstword/secondword/gg**
+- **%s/firstword//g** replaces the words with null
 
 
 #Redirection ( > and >> )
