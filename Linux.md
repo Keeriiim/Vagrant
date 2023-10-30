@@ -53,7 +53,7 @@
 
 # Linux continues
 ## Command List
-- **ls -Option** Displays the Options below
+- **ls -Option** Display any of the options below by replacing option with any value grepbelow
 <img width="491" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/95c85cd6-06df-45d5-8ab1-2de7729e1cd5">
 
 ## Filetypes & Permissions  
@@ -154,10 +154,24 @@ Users cannot read, write or execute each others files without permission
 - **root** Comment
 - **/root** Homedirectory
 - **/bin/bash** Login Shell
+- **Id username** shows info about the user
 
  ## Groups
  - **cat /etc/group** Shows all created groups
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/8f571286-a289-42c8-a810-a553b3af89f8)
+- **vagrant** Username
+- **:x** The link to shadowfile, which hold the password encrypted
+- **:1000** GroupID
 
+**Create an User**
+You need to be in root to create users and groups.
+- **useradd test** Adds an user named test
+- **groupadd testgroup** Adds a group named testgroup
+
+**Add an user to a group**
+There are two ways:
+1. **vim /etc/group** Find the group you want to add users and add them manually
+2. **usermod -aG testgroup test** Adds the user test directly to the testgroup
 
 
 
