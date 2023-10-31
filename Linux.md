@@ -168,9 +168,9 @@ You need to be in root to create users and groups.
 - **useradd test** Adds an user named test
 - **groupadd testgroup** Adds a group named testgroup
 
-**Add an user to a group**  
+## Add an user to a group  
 There are two ways:  
-1. **vim /etc/group** Find the group you want to add users and add them manually
+1. **vim /etc/group** Find the group you want to add users and add them manually  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d0765252-94d6-4c7e-984b-73ff5516d2a3)
 
 2. **usermod -aG testgroup test** Adds the user test directly to the testgroup
@@ -182,10 +182,24 @@ There are two ways:
 - **userdel -r test** Deletes test user and its home directory
 - **groupdel -r testgroup** Deletes test group
 
-##Useful commands
+**Useful commands**
 - **last** Shows history of latest logins
 - **who** Shows current user
 - **lsof -u test** Lists all opened files by the user, the user needs to be logged in (yum install lsof -y)
+
+## Ownership
+- **ls -ld /root/devops** Shows the permissions of a directory
+- **chown test:testgroup file.txt** Changes the owner of file.txt to test and group to testgroup
+- **chmod o-r /opt/devops** Removes the right for others to read to that directory (w for write,  )
+- **chmod g+w /opt/devops** Adds the right for others to write in the directoryls  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4f9059db-5675-4bec-8a3d-ae4f2a121596)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/923885ee-bcf6-4fd2-9542-bf70edc63fe2)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9589857b-6c45-41e8-9b4b-737872f1f603)
+
+
+
+
+
 
 
 
