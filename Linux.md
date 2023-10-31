@@ -157,13 +157,13 @@ Users cannot read, write or execute each others files without permission
 - **Id username** shows info about the user
 
  ## Groups
- - **cat /etc/group** Shows all created groups
+ - **cat /etc/group** Shows all created groups  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/8f571286-a289-42c8-a810-a553b3af89f8)
 - **vagrant** Username
 - **:x** The link to shadowfile, which hold the password encrypted
 - **:1000** GroupID
 
-**Create an User**
+**Create an User**  
 You need to be in root to create users and groups.
 - **useradd test** Adds an user named test
 - **groupadd testgroup** Adds a group named testgroup
@@ -177,7 +177,7 @@ There are two ways:
 
 **Add/change password and login to new user**
 - **passwd test** Adds/changes the password for the user test
-- **su - test** Logs in as the user test (only root will not need to know any password to log in)
+- **su - test** Logs in as the user test (root doesnt need to enter password)
 - **exit** Logout from user
 - **userdel -r test** Deletes test user and its home directory
 - **groupdel -r testgroup** Deletes test group
@@ -192,9 +192,17 @@ There are two ways:
 - **chown test:testgroup file.txt** Changes the owner of file.txt to test and group to testgroup
 - **chmod o-r /opt/devops** Removes the right for others to read to that directory (w for write,  )
 - **chmod g+w /opt/devops** Adds the right for others to write in the directoryls  
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4f9059db-5675-4bec-8a3d-ae4f2a121596)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4f9059db-5675-4bec-8a3d-ae4f2a121596)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/1f1090dc-396e-45f2-847c-52b318e027b2)  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/923885ee-bcf6-4fd2-9542-bf70edc63fe2)  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9589857b-6c45-41e8-9b4b-737872f1f603)
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/8cd62ca5-b366-4dd3-b5b0-a5277efd9b59)  
+- **Alternative way**
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d1a566dd-d022-4568-954c-d80e97aba890)
+
+
+
 
 
 
