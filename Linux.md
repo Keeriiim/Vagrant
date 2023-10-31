@@ -198,8 +198,15 @@ There are two ways:
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9589857b-6c45-41e8-9b4b-737872f1f603)
 
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/8cd62ca5-b366-4dd3-b5b0-a5277efd9b59)  
-- **Alternative way**
+- **Alternative way**  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d1a566dd-d022-4568-954c-d80e97aba890)
+
+# Sudo
+
+Sudo is a privelige that the root has by defualt, users can also invoke sudo when making a change to elevate their privelages.
+- **ls -l /etc/sudoers**
+
+
 
 
 
