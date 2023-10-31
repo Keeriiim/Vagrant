@@ -207,6 +207,15 @@ Sudo is a privelige that the root has by defualt, users can also invoke sudo whe
 - **ls -l /etc/sudoers**
 
 
+# Managning packages 
+- Manual install
+  1. Go to webpage and find what you want to download
+  2. **curl http-link-adress -o fileName** Paste the link adress to download
+  3. **rpm -ivh fileName** install the file(i) in a human(h), readable way(v).  
+ ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ad956a7a-81f8-4a49-93e5-752a0be7fdc6)
+
+
+
 
 
 
