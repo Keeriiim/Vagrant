@@ -206,12 +206,17 @@ Sudo is a privelige that the root has by defualt, users can also invoke sudo whe
 - If the created user wants to use sudo, it has to be added to the sudoers file
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/5ff80a5f-ae27-4b8d-9732-17b908728527)
 
-- Even the root doesn't have priveliges to make changes in the file by default for security reasons.
-  Switch to root and run **visudo** to open the file in the right mode.
+Even the root doesn't have priveliges to make changes in the file by default for security reasons.
+Switch to root and run **visudo** to open the file in the right mode.
 
-- Run **:se nu** to see all line numbers.
-  Run **/root** to highlight all words containing root in the file and locate this
+- Run **:se nu** to see all line numbers.  
+  Run **/root** to highlight all words containing root in the file and locate this  
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7a95e476-2e2f-4d45-89e4-bcbc06ccf091)
+
+- Copy the line by pressing yy and paste it below with p. Then change root to the user you want to give priviliges to.
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/72e75290-ce85-43ab-85d2-ddbb659e594c)
+
+
   
 
   
