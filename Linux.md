@@ -224,12 +224,30 @@ Switch to root and run **visudo** to open the file in the right mode.
 
 - If you want a group to be given sudo access, write %GroupName instead of username in the file.
 
-# Managning packages 
-- Manual install
-  1. Go to webpage and find what you want to download
-  2. **curl http-link-adress -o fileName** Paste the link adress to download
-  3. **rpm -ivh fileName** install the file(i) in a human(h), readable way(v).  
+# Managning packages  
+Manual install  
+1. Go to webpage and find what you want to download  
+2. **curl http-link-adress -o fileName** Paste the link adress to download  
+3. **rpm -ivh fileName** install the file(i) in a human(h), readable way(v).  
  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ad956a7a-81f8-4a49-93e5-752a0be7fdc6)
+
+  What if you need to preinstall multiple dependencies?  
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4ae22a34-70fc-49d5-9f4b-8b6e5ad21a78)  
+  
+- The solution is to automate it by using a package manager.
+
+# Rpm
+Some usefull commands
+- **rpm -qa** Lists all rpms
+- **rpm -qa | grep tree** Searches for a rpm named tree
+- **rpm -e fullNameRpm** Deletes a rpm
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/97ced197-9924-49a7-bd9f-66ea89ad8309)
+
+# Hello
+
+
+  
+
 
 
 
