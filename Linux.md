@@ -202,18 +202,19 @@ There are two ways:
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d1a566dd-d022-4568-954c-d80e97aba890)
 
 # Sudo  
-Sudo is a privelige that the root has by defualt, users can also invoke sudo when making a change to elevate their priviliges.
+Sudo is a privelige that the root has by defualt, users can also invoke sudo when making a change to elevate their priviliges. 
 - If the created user wants to use sudo, it has to be added to the sudoers file
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4e0d0e7e-3e1c-466f-9275-ce5ac411b3b8)
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/5ff80a5f-ae27-4b8d-9732-17b908728527)
 
+- Even the root doesn't have priveliges to make changes in the file by default for security reasons.
+  Switch to root and run **visudo** to open the file in the right mode.
 
+- Run **:se nu** to see all line numbers.
+  Run **/root** to highlight all words containing root in the file and locate this
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7a95e476-2e2f-4d45-89e4-bcbc06ccf091)
+  
 
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/6437afaf-c4ab-4f0e-a76e-45d1dde5cba8)
-
-- Go to root and run **ls -l /etc/sudoers** 
-
-Even the root doesn't have priveliges to make changes in the file by default for security reasons. Run **visudo** to open the file in the right mode.
-- 
+  
 
 
 
