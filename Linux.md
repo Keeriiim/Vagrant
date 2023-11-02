@@ -216,6 +216,13 @@ Switch to root and run **visudo** to open the file in the right mode.
 - Copy the line by pressing yy and paste it below with p. Then change root to the user you want to give priviliges to.
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/72e75290-ce85-43ab-85d2-ddbb659e594c)
 
+- Saving this can acctualy give you an error, and if anything wrong happens, you will need the root password to reset everything.
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/75475f28-1749-4fa6-88d9-134ceb991f26)
+
+- Therefor it is better to go to **cd /etc/sudoers.d** and create a new file adding the specific user you want to give priviliges to.
+  
+  
+
 
   
 
