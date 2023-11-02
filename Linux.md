@@ -220,18 +220,9 @@ Switch to root and run **visudo** to open the file in the right mode.
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/75475f28-1749-4fa6-88d9-134ceb991f26)
 
 - Therefor it is better to go to **cd /etc/sudoers.d** and create a new file adding the specific user you want to give priviliges to.
-  
-  
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/1e626fb2-6e36-4507-8aed-907459d68fa9)
 
-
-  
-
-  
-
-
-
-
-
+- If you want a group to be given sudo access, write %GroupName instead of username in the file.
 
 # Managning packages 
 - Manual install
