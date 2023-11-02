@@ -204,8 +204,8 @@ There are two ways:
 # Sudo  
 Sudo is a privelige that the root has by defualt, users can also invoke sudo when making a change to elevate their priviliges.
 - If the created user wants to use sudo, it has to be added to the sudoers file
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/213cf2f4-e5dd-45e8-8072-d7c63da729dd)  
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/c1b04d4c-b33a-4fac-a116-b242bef83106)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4e0d0e7e-3e1c-466f-9275-ce5ac411b3b8)
+
 
 
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/6437afaf-c4ab-4f0e-a76e-45d1dde5cba8)
