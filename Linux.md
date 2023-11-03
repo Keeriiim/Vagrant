@@ -235,7 +235,7 @@ Manual install
   What if you need to preinstall multiple dependencies?  
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4ae22a34-70fc-49d5-9f4b-8b6e5ad21a78)  
 
-Some usefull commands
+ Some usefull commands
 - **rpm -qa** Lists all rpms
 - **rpm -qa | grep tree** Searches for a rpm named tree
 - **rpm -e fullNameRpm** Deletes a rpm  
@@ -246,12 +246,17 @@ Some usefull commands
 - These are the repos that yum goes through when searching  
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/1bfd2f5a-c65e-44f8-9e92-f9ebede2c869)
 
-- Check full doc att [yum](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
+- **yum install httpd** Installs the package with dependencies
+- **yum remove httpd** Deletes httpd with its dependencies
+Check full doc att [yum](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
+
+What if a package isnt found in the repo, like jenkins?  
+- Then you find the doc online on how to install it! See [Jenkins](https://pkg.jenkins.io/redhat/)  
+
+
+
   
-  
-
-
-
+ 
   
 
 
