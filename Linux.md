@@ -253,6 +253,20 @@ Check full doc att [yum](https://access.redhat.com/sites/default/files/attachmen
 What if a package isnt found in the repo, like jenkins?  
 - Then you find the doc online on how to install it! See [Jenkins](https://pkg.jenkins.io/redhat/)  
 
+# Service
+Let's download a service with yum  
+- **yum install httpd -y** Finds httpd and all dependencies needed
+  
+## systemctl  
+Some commands:  
+- **systemctl start [service]** Starts a specified service.
+- **systemctl stop [service]** Stops a specified service.
+- **systemctl restart [service]** Restarts a specified service.
+- **systemctl reload [service]** Reloads the configuration of a specified service.
+- **systemctl enable [service]** Enables a service to start automatically at boot time.
+- **systemctl disable [service]** Disables a service, preventing it from starting automatically at boot time.
+- **systemctl status [service]** Shows the status of a specified service.
+- **systemctl list-units** Lists all active units (services, sockets, devices, etc.) on the system.
 
 
   
