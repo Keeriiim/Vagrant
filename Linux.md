@@ -289,10 +289,10 @@ Some commands:
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/636dbba2-f4f1-4567-9725-53bf984ef4b4)
 
 Lets move the file and unarchive it at /tmp
-- **mv fileName.tar.gz /tmp/**
+- **mv fileName.tar.gz /tmp/**  
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a1de9fe7-901c-4983-a9af-d0245631b319)
   
-- **tar -xzvf** x is for extract.
+- **tar -xzvf** x is for extract.  
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f3c7276f-997a-44f3-935b-976b501c557f)
   
 
