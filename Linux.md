@@ -270,6 +270,36 @@ Some commands:
 
 
   
+ # Processes
+- **top** Shows all running proccesses
+-  **ps -ef** Shows all processes and what started them
+- **kill PID** Stops the process and all children.  
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f6e7fc57-8914-4c4f-aee3-32b6f8044fd5)
+  
+- **kill -9 PID** Ends only one process. The children get orphaned and you need to kill them aswell.
+
+
+# Archiving
+
+## Legacy
+- **tar -czvf fileName.tar.gz PathName** c(create),z(compress),v(verbose),f(file) , tar means tarball, gz means it was compressed
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/86a79c5f-de02-4e3a-8fec-2cfbd8c74887)
+  
+- **file fileName.tar.gz** Gives you the info of the file  
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/636dbba2-f4f1-4567-9725-53bf984ef4b4)
+
+Lets move the file and unarchive it at /tmp
+- **mv fileName.tar.gz /tmp/**
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a1de9fe7-901c-4983-a9af-d0245631b319)
+  
+- **tar -xzvf** x is for extract.
+  ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f3c7276f-997a-44f3-935b-976b501c557f)
+  
+
+## New
+- **yum install zip unzip -y** Install the zip & unzip
+- **zip -r** 
+
  
   
 
