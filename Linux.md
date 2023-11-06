@@ -294,11 +294,15 @@ Lets move the file and unarchive it at /tmp
   
 - **tar -xzvf** x is for extract.  
   ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f3c7276f-997a-44f3-935b-976b501c557f)
+
+  If you dont want to use cd, you can run
+- **tar -xzvf fileName.tar.gz -C /opt** -C enters into the folder before extraction
   
 
 ## New
 - **yum install zip unzip -y** Install the zip & unzip
-- **zip -r** 
+- **zip -r fileName.zip pathName** zips the file/folder
+- **unzip fileName.zip**
 
  
   
