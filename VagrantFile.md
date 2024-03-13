@@ -69,9 +69,13 @@ The script can be from docker, puppet, ansible etc. The language should be based
    **systemctl enable httpd** - keeps it alive after reboot
 4. Browse to your static ip  
 <img width="1160" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/4516df45-96db-4380-9a58-d61b51bff44b">  
-5. **cd /var/www/html/** - Create a index.html file in this folder and add some text.  
-6. **systemctl restart httpd*** - Restart the service to enable the changes  
+
+5. **cd /var/www/html/** -> **touch index.html** Create a index.html file in this folder and add some text via vim.  
+
+6. **systemctl restart httpd** - Restart the service to enable the changes  
+
 <img width="333" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/7faade5e-f110-4acb-9010-655724d1fe77">  
+
 7.
 
 
