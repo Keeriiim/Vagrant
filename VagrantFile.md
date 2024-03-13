@@ -57,6 +57,25 @@ The script can be from docker, puppet, ansible etc. The language should be based
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/e80ab6e3-2478-4451-ad0c-8d366c20f2fa)
 
 
+# Website setup
+## Manually
+## Centos
+
+1. **vi /etc/hostname** - Add the new hostname 'finance'.  
+   **hostname finance** - Type this then logout to change from username@localhost -> username@finance
+
+2. **yum install httpd wget vim zip unzip -y** - Donwload this  
+3. **systemctl start httpd** - starts the service  
+   **systemctl enable httpd** - keeps it alive after reboot
+4. Browse to your static ip  
+<img width="1160" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/4516df45-96db-4380-9a58-d61b51bff44b">  
+5. **cd /var/www/html/** - Create a index.html file in this folder and add some text.  
+6. **systemctl restart httpd*** - Restart the service to enable the changes  
+<img width="333" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/7faade5e-f110-4acb-9010-655724d1fe77">  
+7.
+
+
+
 
 
 
