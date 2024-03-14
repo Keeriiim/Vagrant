@@ -76,7 +76,23 @@ The script can be from docker, puppet, ansible etc. The language should be based
 
 <img width="333" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/7faade5e-f110-4acb-9010-655724d1fe77">  
 
-7.
+7. Go to tooplate.com/view/2135-mini-finance and press F12 for devtools mode. Choose network -> Doc -> Press on download and look at the tools for a Get request for the file.  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ab2fb332-3b5a-4ed5-833c-628fd00ef178)
+
+8. **wget https://www.tooplate.com/zip-templates/2135_mini_finance.zip** - Go to /temp/ and download the file with wget. Then unzip the file and cd into the unzipped directory.  
+9. **cp -r * /var/www/html/** - Inside the folder, cp all files to enable it on your localhost via httpd.  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d82d332d-7d5b-4e5a-8c0d-562a132c379e)  
+
+10. **systemctl status firewalld** - Check the firewall that can prevent httpd from working properly. This is active if running on macOs. So you need to stop it.  
+    **systemctl stop firewalld** , **systemctl disable firewalld**  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/74f01dc3-758c-4ff5-b6e2-882bc5e878f5)  
+
+11.
+
+
+
+
+
 
 
 
