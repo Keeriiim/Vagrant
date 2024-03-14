@@ -87,7 +87,24 @@ The script can be from docker, puppet, ansible etc. The language should be based
     **systemctl stop firewalld** , **systemctl disable firewalld**  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/74f01dc3-758c-4ff5-b6e2-882bc5e878f5)  
 
-11.
+## Automation IAC (Infrastructure as code)
+## Centos
+
+1. **vagrant init any_centOs_Version** - Create a vagrantfile
+2. Open the file and uncomment public & private ip. Set the static to 192.168.56.any
+3. Uncomment provisioning part and add all the manual steps as code
+```
+yum install httpd wget vim zip unzip -y  
+systemctl start httpd  
+systemctl enable httpd  
+mkdir -p /tmp/finance  
+cd /tmp/finance  
+wget https://www.tooplate.com/zip-templates/2135_mini_finance.zip  
+unzip -o 2135_mini_finance.zip  
+cp -r 2135_mini_finance/* /var/www/html/  
+systemctl restart httpd
+```  
+<img width="621" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/a993da53-c656-48d9-9c11-7e1edc1f59a0">
 
 
 
