@@ -11,6 +11,14 @@ The User will enter the ip adress in a webbrowser to access our app running on t
 If the login is the first time it will go to the database, if not the request will go to mem chache service.  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a7164e83-acf0-4b26-ada6-e6040d15668f)  
 
+## Workflow
+1. Have all tools installed on local computer.
+2. Clone Source Code
+3. cd into vagrant dir & start a VM for every service
+4. Validate all VMs and the interaction with eachother
+5. Setup all services
+6. Build and deploy App
+
 
 ## Tools
 * **Hypervisor** - Oracle VM Virtual Box
