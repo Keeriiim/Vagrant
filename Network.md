@@ -1,8 +1,11 @@
 # Table of Contents
 
-- [Commands](commands)
-- <a href="#chapter2" style="color: blue;">Chapter 2: Getting Started</a>
-- <a href="#chapter3" style="color: blue;">Chapter 3: Conclusion</a>
+- [Commands](#commands)  
+- [OSI Model](#osi-model)  
+- [Home network](#home-network)  
+- [TCP / UDP](#tcp--udp)  
+- [Port Communication](#port-communication)
+
 
 
 
