@@ -1,7 +1,16 @@
+# Table of Contents
+
+- [Commands](commands)
+- <a href="#chapter2" style="color: blue;">Chapter 2: Getting Started</a>
+- <a href="#chapter3" style="color: blue;">Chapter 3: Conclusion</a>
+
+
+
+## Commands
+
 ## OSI Model
 <img width="917" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/e03b9f3f-026c-4079-9162-6682a0f0f3e9">  
 <img width="276" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/b6ad1159-c8d1-4dc2-9235-057b8306be1c">
-
 
 ## Home network
 <img width="1020" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/73f1242d-fb6f-4a61-a41c-2d2440f9a153">
