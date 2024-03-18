@@ -108,6 +108,21 @@ GRANT ALL PRIVILEGES ON accounts.* TO 'admin'@'%' IDENTIFIED BY 'root';
 FLUSH PRIVILEGES;
 exit;
 ```
+**Clone the repo and extract the db to the right table**
+```bash
+git clone -b main https://github.com/hkhcoder/vprofile-project.git
+cd vprofile-project
+mysql -u root -proot accounts < src/main/resources/db_backup.sql
+```
+**access the table to see the result**
+```sql
+mysql -u root -proot accounts;
+show tables;
+```
+<img width="269" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/9c636354-2508-463d-8bc9-5939eeed908d">  
+
+heeh
+
 
 
 
