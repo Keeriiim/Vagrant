@@ -99,13 +99,17 @@ show databases;
 ```
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/b6c05d5f-efac-47fa-8a3f-f3c529c85e1a)  
 
+**Create an admin user for other Vms to access the DB.**  
 ```sql
 //Grants user 'admin' all priveliges for accounts and a password 'admin' 
 GRANT ALL PRIVILEGES ON accounts.* TO 'admin'@'%' IDENTIFIED BY 'root';
 
 //reloads the grant tables in MySQL so that the changes take effect immediately
 FLUSH PRIVILEGES;
-```    
+exit;
+```
+
+
 
 
 
