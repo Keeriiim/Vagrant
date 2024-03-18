@@ -92,18 +92,20 @@ Y
 ```
 
 ** Connect to the DB **  
-```sql
-// Connect to DB
-mysql -u root -proot  
+**mysql -u root -proot**  
+```sql  
 create database accounts;
-show databases
+show databases;
 ```
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/b6c05d5f-efac-47fa-8a3f-f3c529c85e1a)  
 
 ```sql
+//Grants user 'admin' all priveliges for accounts and a password 'admin' 
 GRANT ALL PRIVILEGES ON accounts.* TO 'admin'@'%' IDENTIFIED BY 'root';
-``` - Grants user 'admin' all priveliges for accounts and a password 'admin'  
-**FLUSH PRIVILEGES;** - reloads the grant tables in MySQL so that the changes take effect immediately  
+
+//reloads the grant tables in MySQL so that the changes take effect immediately
+FLUSH PRIVILEGES;
+```    
 
 
 
