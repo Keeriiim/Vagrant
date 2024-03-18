@@ -47,6 +47,13 @@ If the login is the first time it will go to the database, if not the request wi
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9d9f7a08-ed81-4fc5-a71c-c4f6aca4f660)  
 
 
+## Provisioning  
+Setup of the stack should be done in this order to avoid problems, stopping should be done from bottom to top. A stack means combination of multiple services. 
+A cluster is group of systems running the same service.  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/e81e0eac-75da-4e21-b997-2b2f060ffea3)  
+
+
+
 # VM Setup 
 ## Prerequisites
 1. Oracle VM VirtualBox
@@ -62,7 +69,41 @@ This makes it easy for the user to use the hostname instead of ip when calling a
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/602065fa-c7ae-4262-ba29-6c0c047fcfe2)  
 
 You can always change the name or ip adress in /etc/hosts file from root.
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/40ed28c0-50c4-48db-a757-58de041479bd)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/40ed28c0-50c4-48db-a757-58de041479bd)  
+
+## MySQL / MariaDB
+**yum update -y**  
+**yum install epel-release -y** - The epel-release package provides Extra Packages for Enterprise Linux (EPEL) repository configuration. /etc/yum.repos.d/  
+**yum install mariadb-server -y** - installs the server  
+**systemctl start mariadb**- starts the service  
+**systemctl enable mariadb**- enables it to always be on when ssh  
+**mysql_secure_installation** - a script available in MySQL that helps you secure your MySQL installation by performing various security-related operations. These include setting the root password, removing anonymous users, disabling remote root login, and removing test databases.  
+
+```
+For the script:
+Y
+Y
+root
+root
+Y
+Y
+Y
+Y
+```
+
+** Connect to the DB **  
+```sql
+// Connect to DB
+mysql -u root -proot  
+create database accounts;
+show databases
+```
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/b6c05d5f-efac-47fa-8a3f-f3c529c85e1a)  
+
+```sql
+GRANT ALL PRIVILEGES ON accounts.* TO 'admin'@'%' IDENTIFIED BY 'root';
+``` - Grants user 'admin' all priveliges for accounts and a password 'admin'  
+**FLUSH PRIVILEGES;** - reloads the grant tables in MySQL so that the changes take effect immediately  
 
 
 
