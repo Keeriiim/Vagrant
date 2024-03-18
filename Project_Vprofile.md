@@ -47,5 +47,14 @@ If the login is the first time it will go to the database, if not the request wi
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9d9f7a08-ed81-4fc5-a71c-c4f6aca4f660)  
 
 
-# VM Setup
+# VM Setup 
+## Prerequisites
+1. Oracle VM VirtualBox
+2. Git Bash & Vagrant
+3. Vagrant plugin hostmanager
+
+## Hostmanager  
+Hostmanager is a vagrant plugin that takes the hostname & ip set in the vagrantfile and adds them to /etc/hosts. 
+This makes it easy for the user to use the hostname instead of ip when calling a machine.
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/602065fa-c7ae-4262-ba29-6c0c047fcfe2)
 
