@@ -1,6 +1,12 @@
-# VProfile setup [Local]
+# VProfile setup [Local]  
 
-## Project  
+- [Project info](#project)
+- [VM Setup](#vm-setup)
+- [Credits](#credits)
+- [License](#license)
+
+
+# Project  
 The aim for this project is to create a multi tier web application stack on my local machine (windows 10). A stack is a collection of services working together to create and experience(in this case a WebApp).
 This project will make a baseline for more upcoming projects involing deployment to a cloud providers, refactoring, containeraze applications & deploy on clusters etc.
 The benefit of this project will also be that it will create a local lab environment for me to practice and make any change i want before pushing it to real servers.
@@ -38,5 +44,8 @@ If the login is the first time it will go to the database, if not the request wi
 * MemCached - Caching service that will be connected to MySQL server.
 * MySql - Database for storing information
 
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9d9f7a08-ed81-4fc5-a71c-c4f6aca4f660)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9d9f7a08-ed81-4fc5-a71c-c4f6aca4f660)  
+
+
+# VM Setup
 
