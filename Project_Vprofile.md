@@ -56,10 +56,16 @@ If the login is the first time it will go to the database, if not the request wi
 ## Hostmanager  
 Hostmanager is a vagrant plugin that takes the hostname & ip set in the vagrantfile and adds them to /etc/hosts. 
 This makes it easy for the user to use the hostname instead of ip when calling a machine.  
-**vagrant plugin install vagrant-hostmanager** - Installs the plugin on your local computer
+**vagrant plugin install vagrant-hostmanager** - Installs the plugin on your local computer  
 **vagrant plugin list** - Lists all installed plugins  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/e95e7485-0dca-42ed-b13e-8a41abdc46b2)  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/602065fa-c7ae-4262-ba29-6c0c047fcfe2)  
+
+You can always change the name or ip adress in /etc/hosts file from root.
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/40ed28c0-50c4-48db-a757-58de041479bd)
+
+
+
 
 
 
