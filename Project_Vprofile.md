@@ -58,7 +58,10 @@ Hostmanager is a vagrant plugin that takes the hostname & ip set in the vagrantf
 This makes it easy for the user to use the hostname instead of ip when calling a machine.  
 **vagrant plugin install vagrant-hostmanager** - Installs the plugin on your local computer
 **vagrant plugin list** - Lists all installed plugins  
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/602065fa-c7ae-4262-ba29-6c0c047fcfe2) 
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/e95e7485-0dca-42ed-b13e-8a41abdc46b2)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/602065fa-c7ae-4262-ba29-6c0c047fcfe2)  
+
+
 
 
 
