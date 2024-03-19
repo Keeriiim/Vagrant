@@ -2,7 +2,6 @@
 
 - [Project info](#project)
 - [VM Setup](#vm-setup)
-- [Credits](#credits)
 - [License](#license)
 
 
@@ -71,13 +70,18 @@ This makes it easy for the user to use the hostname instead of ip when calling a
 You can always change the name or ip adress in /etc/hosts file from root.
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/40ed28c0-50c4-48db-a757-58de041479bd)  
 
-## MySQL / MariaDB
-**yum update -y**  
-**yum install epel-release -y** - The epel-release package provides Extra Packages for Enterprise Linux (EPEL) repository configuration. /etc/yum.repos.d/  
-**yum install mariadb-server -y** - installs the server  
-**systemctl start mariadb**- starts the service  
-**systemctl enable mariadb**- enables it to always be on when ssh  
-**mysql_secure_installation** - a script available in MySQL that helps you secure your MySQL installation by performing various security-related operations. These include setting the root password, removing anonymous users, disabling remote root login, and removing test databases.  
+## 1. MySQL / MariaDB
+* Connect to the first vm -> db01  
+  **vagrant ssh db01**  
+
+```bash
+yum update -y  
+yum install epel-release -y (The epel-release package provides Extra Packages for Enterprise Linux (EPEL) repository configuration. /etc/yum.repos.d/)
+yum install mariadb-server -y  (installs the server)  
+systemctl start mariadb (starts the service)  
+systemctl enable mariadb (enables it to always be on when ssh)  
+mysql_secure_installation (a script available in MySQL that helps you secure your MySQL installation by performing various security-related operations. These include setting the root password, removing anonymous users, disabling remote root login, and removing test databases.)
+```  
 
 ```
 For the script:
@@ -114,14 +118,34 @@ git clone -b main https://github.com/hkhcoder/vprofile-project.git
 cd vprofile-project
 mysql -u root -proot accounts < src/main/resources/db_backup.sql
 ```
-**access the table to see the result**
+**Access the table to see the result**
 ```sql
 mysql -u root -proot accounts;
 show tables;
+exit;
 ```
 <img width="269" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/9c636354-2508-463d-8bc9-5939eeed908d">  
 
-heeh
+**systemctl restart mariadb**
+
+## 2. Memcached
+* Connect to the 2nd vm > mc01
+  **vagrant ssh mc01**
+
+Installing packet manager, memcached and changeing the listening port from itself to all ips (0.0.0.0)
+```bash
+dnf install epel-release -y
+dnf install memcached -y
+systemctl start memcached
+systemctl enable memcached
+systemctl status memcached
+sed -1 's/127.0.0.1/0.0.0.0/g' etc/sysconfig/memcached
+systemctl status memcached
+```
+<img width="748" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/a66b2294-fe6d-4600-9c11-b383015f4257">  
+
+
+
 
 
 
