@@ -128,7 +128,9 @@ exit;
 
 **systemctl restart mariadb**
 
-## 2. Memcached
+## 2. Memcached  
+Memcached is an open-source, high-performance, distributed memory caching system. It caches data and objects in RAM to speed up dynamic web applications. Data is stored in key-value pairs and retrieved quickly without the need for repeated database queries. Memcached improves application performance by reducing response times and alleviating the load on backend data sources.  
+
 * Connect to the 2nd vm > mc01
   **vagrant ssh mc01**
 
@@ -139,10 +141,91 @@ dnf install memcached -y
 systemctl start memcached
 systemctl enable memcached
 systemctl status memcached
-sed -1 's/127.0.0.1/0.0.0.0/g' etc/sysconfig/memcached
+sed -i 's/127.0.0.0/0.0.0.0/g' /etc/sysconfig/memcached
 systemctl status memcached
 ```
 <img width="748" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/a66b2294-fe6d-4600-9c11-b383015f4257">  
+
+## 3. RabbitMQ  
+RabbitMQ is used to facilitate communication between different components of an application or between different applications/systems. It enables asynchronous messaging, meaning that sender and receiver do not have to interact with each other at the same time. Instead, messages can be sent and stored until the recipient is ready to process them. This decoupling of components makes systems more flexible, scalable, and reliable.  *
+For security reasons, loopback connection will be dissallowed, meaning you can only connect/use the service from other hosts.
+
+* Connect to the 3rd vm > rmq01
+ **vagrant ssh rmq01**
+
+```bash
+dnf update -y
+dnf install epel-release -y
+dnf install centos-release-rabbitmq-38 -y   // repository configuration package that enables the RabbitMQ repository for your system
+dnf --enablerepo=centos-rabbitmq-38 -y install rabbitmq-server   // DNF will now look into the centos-rabbitmq-38 repository and install the rabbitmq-server package along with any of its dependencies
+systemctl start rabbtimq-server
+systemctl enable rabbtimq-server
+systemctl status rabbtimq-server
+sh -c 'echo "[{rabbit, [{loopback_users, []}]}]." > /etc/rabbitmq/rabbitmq.config'   // Creates a config file to dissallow loopback (127.0.0.1) connection 
+rabbitmqctl add_user test test    // Creates a user called test, 
+rabbitmqctl set_user_tags test administrator   // Makes the test user an administrator
+systemctl status memcached
+```
+
+## 3. Tomcat  
+Definition: Apache Tomcat is an open-source web server and servlet container developed by the Apache Software Foundation.
+Usage: It is primarily used to deploy Java Servlets and JavaServer Pages (JSP), making it a popular choice for hosting Java web applications.
+
+* Connect to the 3rd vm > app01
+ **vagrant ssh app01**
+  
+```bash
+dnf update -y
+dnf install epel-release -y
+dnf install java-11-openjdk java-11-openjdk-devel
+dnf install wget git maven -y
+
+cd /temp/
+wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.75/bin/apache-tomcat-9.0.75.tar.gz // download tomcat
+tar xzvf apache-tomcat-9.0.75.tar.gz   // extracts gzip, displays all files in current directory
+
+useradd --home-dir /usr/local/tomcat --shell /sbin/nologin tomcat   //Adds a user 'tomcat' that doesnt require password
+cp -r apache-tomcat-9.0.75/* /usr/local/tomcat   // Cp's all files to a new directory
+ls -ls /usr/local/tomcat/   // Lists who owns all files
+ls -ld /usr/local/tomcat/   // Lists who owns the directory
+```  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/e3fdb062-3b06-4bce-9865-af78f21f94cb)  
+
+```bash
+chown -R tomcat.tomcat /usr/local/tomcat   // Changes ownershop of all files to user.group, The -R option ensures that the ownership change is applied recursively to all files and subdirectories within /usr/local/tomcat.
+ls -ls /usr/local/tomcat/   // Lists who owns all files
+```  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/2d1f30ec-48ae-4e4e-a3f5-79b6a3b717d1)  
+
+## Setup systemctl command for tomcat
+
+```bash
+vi /etc/systemd/system/tomcat.service -> add the text below
+
+[Unit]
+Description=Tomcat
+After=network.target
+[Service]
+User=tomcat
+WorkingDirectory=/usr/local/tomcat
+Environment=JRE_HOME=/usr/lib/jvm/jre
+Environment=JAVA_HOME=/usr/lib/jvm/jre
+Environment=CATALINA_HOME=/usr/local/tomcat
+Environment=CATALINE_BASE=/usr/local/tomcat
+ExecStart=/usr/local/tomcat/bin/catalina.sh run
+ExecStop=/usr/local/tomcat/bin/shutdown.sh
+SyslogIdentifier=tomcat-%i
+
+
+systemctl daemon-reload   // Always run this after making a change in /etc/systemd/system
+systemctl start tomcat
+systemctl enable tomcat
+```  
+
+If we didn't run the bash script the configuration would be stored in /etc, and logs in /var/logs. Now we have it like this.
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/bd23e7d1-6938-47a1-b6d6-cb5a629d2c2c)  
+
+
 
 
 
