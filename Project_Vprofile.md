@@ -225,6 +225,69 @@ systemctl enable tomcat
 If we didn't run the bash script the configuration would be stored in /etc, and logs in /var/logs. Now we have it like this.
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/bd23e7d1-6938-47a1-b6d6-cb5a629d2c2c)  
 
+## Deploy our app
+
+```bash
+git clone -b main https://github.com/hkhcoder/vprofile-project.git
+cd vprofile-project
+vim src/main/resources/application.properties   // change db login to admin, root
+mvn install
+systemctl stop tomcat
+
+rm -rf /usr/local/tomcat/webapps/ROOT*   //
+cp target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war   //
+systemctl start tomcat
+chown tomcat.tomcat /usr/local/tomcat/webapps -R
+systemctl restart tomcat
+
+
+```
+
+We are removing the default webpage for tomcat. By removing the files in the ROOT directory.
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/e71b81a8-bfc7-4c69-a722-69692f9e963c)  
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/97e4174d-bb14-4810-a13c-d6e8ef78bd6b)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f4bf6d11-cf7d-4567-be6a-1e5725bf05c6)
+
+
+
+
+Then we extract the war file, start the tomcat and it will automaticly create a ROOT folder. Then we browse again.
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/55a8db67-d44a-4905-a78e-5b9c5a68adb5)  
+
+
+
+## 5. Nginx
+Nginx is a high-performance, open-source web server and reverse proxy. It is known for its efficiency in handling concurrent connections and serving static content. Nginx is often used as a front-end server to handle incoming web requests and distribute them to backend servers for processing.  
+
+```bash
+apt update && upgrade
+apt install nginx -y
+vi /etc/nginx/sites-available/vproapp // update with below content
+
+                      
+upstream vproapp {    // This configuration sets up a reverse proxy in Nginx. Incoming HTTP requests to Nginx on port 80 are forwarded to app01:8080.
+server app01:8080;
+}
+server {
+listen 80;
+location / {
+proxy_pass http://vproapp;
+}
+}
+```
+
+```bash 
+rm -rf /etc/nginx/sites-enabled/default   //removes the link pointing to default config
+ln -s /etc/nginx/sites-available/vproapp /etc/nginx/sites-enabled/vproapp   //adding the new link to point to the added config
+systemctl restart nginx   // on ubuntu start & enable is set automaticly
+```
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/377c0c1e-cbf8-4ab4-ac58-d3e1a89ee6e7)  
+
+
+
+
+
 
 
 
