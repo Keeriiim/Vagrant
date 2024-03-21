@@ -2,7 +2,7 @@
 
 - [Project info](#project)
 - [VM Setup](#vm-setup)
-- [License](#license)
+- [Automated Setup](#automation)
 
 
 # Project  
@@ -283,6 +283,17 @@ ln -s /etc/nginx/sites-available/vproapp /etc/nginx/sites-enabled/vproapp   //ad
 systemctl restart nginx   // on ubuntu start & enable is set automaticly
 ```
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/377c0c1e-cbf8-4ab4-ac58-d3e1a89ee6e7)  
+
+
+# Automation  
+For the automation it's not possible to write all the shellcode inside the vagrantfile. That is why we create files.sh
+and referenc them in the vagrantfile.  
+<img width="911" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/e0bcd186-5ff2-4c35-8314-64554a39139b">  
+<img width="467" alt="image" src="https://github.com/Keeriiim/Vagrant/assets/117115289/2e1fe929-5b13-407f-a9db-579bd9905550">
+
+
+
+
 
 
 
