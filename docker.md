@@ -102,7 +102,8 @@ curl -L http://localhost:9080 # Follows redirects, 301 if redirected
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/cf3ea479-84be-4014-b7cf-482de6689884)
 
 
-![img_3.png](img_3.png)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f2d5c36a-aa03-4bba-9d44-2745f81eba86)
+ 
 ![img_4.png](img_4.png)
 
 
