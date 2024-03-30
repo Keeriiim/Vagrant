@@ -80,6 +80,7 @@ docker run --name web01 -d -p 9080:80 nginx # run a container with a name and po
 docker inspect web01 # check the details of the container, also works with id instead of container name
 ```
   
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/3bee96c5-e3d2-45f1-b35f-4d962f0a0aa8)
 
 
 ## Curl
