@@ -97,7 +97,6 @@ curl -i http://localhost:9080 # Get Request with headers
 curl -I http://localhost:9080 # Get Request ONLY headers, --head can also be used
 curl -L http://localhost:9080 # Follows redirects, 301 if redirected
 ```
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/79b1e268-788e-445d-8713-37547564dc97)
 
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/cf3ea479-84be-4014-b7cf-482de6689884)
 
