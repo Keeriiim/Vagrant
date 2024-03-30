@@ -79,7 +79,7 @@ docker run --name web01 -d -p 9080:80 nginx # run a container with a name and po
 ```bash
 docker inspect web01 # check the details of the container, also works with id instead of container name
 ```
-![img.png](img.png)  
+  
 
 
 ## Curl
@@ -98,7 +98,8 @@ curl -L http://localhost:9080 # Follows redirects, 301 if redirected
 ```
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/79b1e268-788e-445d-8713-37547564dc97)
 
-![img_2.png](img_2.png)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/cf3ea479-84be-4014-b7cf-482de6689884)
+
 
 ![img_3.png](img_3.png)  
 ![img_4.png](img_4.png)
