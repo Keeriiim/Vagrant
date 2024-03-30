@@ -3,7 +3,7 @@
 - [Docker](#docker)
 - [Setup](#setup)
 - [VM](#inside-the-vm)
-- [Home network](#home-network)
+- [Curl](#curl)
 - [TCP / UDP](#tcp--udp)
 - [Port Communication](#port-communication)
 
@@ -74,3 +74,47 @@ docker run --name web01 -d -p 9080:80 nginx # run a container with a name and po
 * Name the container as web01.
 * (-d) Run the container in detached mode, meaning it will run in the background.
 * (-p 9080:80)Map port 8080 on the host machine to port 80 inside the container.
+
+
+```bash
+docker inspect web01 # check the details of the container, also works with id instead of container name
+```
+![img.png](img.png)  
+
+
+## Curl
+Curl is a command-line tool for transferring data with URLs. It supports various protocols, including HTTP, HTTPS, FTP, and more. Curl can be used to test web services, APIs, download files, and perform other network-related tasks.
+
+GET # GET request to the web server running inside the container.
+```bash
+curl http://localhost:9080 # Normal get Request
+```
+
+
+```bash
+curl -i http://localhost:9080 # Get Request with headers
+curl -I http://localhost:9080 # Get Request ONLY headers, --head can also be used
+curl -L http://localhost:9080 # Follows redirects, 301 if redirected
+```
+![img_1.png](img_1.png)  
+![img_2.png](img_2.png)  
+
+![img_3.png](img_3.png)  
+![img_4.png](img_4.png)
+
+
+
+https://www.youtube.com/watch?v=8f9DfgRGOBo
+
+https://www.youtube.com/watch?v=I6id1Y0YuNk
+
+https://www.youtube.com/watch?v=Xy7fDxz39FM
+
+https://reqres.in/
+
+
+
+POST
+PUT
+DELETE
+```bash
