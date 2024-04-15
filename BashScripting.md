@@ -217,6 +217,32 @@ echo $FREE_RAM
 - ( set -o posix ; set ) | less  # Finds all variables
 - unset FREE_RAM # Deletes the variable
 
+# Exporting Variables
+## .bashrc - Individual for each vagrant user
+- Every user has .bashrc file that is sourced (loaded) when loged in.
+- Test="Hello" will be stored temporarely , if you exit and log in again it will be gone
+- If you add export Test="Hello" and exit/login it will be stored permanently.
+
+
+## /etc/profile - Global ..
+- vim /etc/profile
+  ```bash
+  export Test="hello"
+
+  ```  
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/3761b67b-c107-4a0b-936c-b946eee7dff6) 
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/99017751-5ead-49e0-9981-a90564dc0864)  
+
+Adding export to .bashrc will make it permanent for this user  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/55a75f11-5367-455a-936f-c5d945b437f0)  
+
+Adding export to /etc/profile will make it permanent and global for ALL users  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/64b1c140-93d1-47d4-8f8d-b146f1284748)
+
+
+
+
 
 
 
