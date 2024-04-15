@@ -2,9 +2,9 @@
 
 - [Bash](#bash)  
 - [Script](#script)  
-- [Home network](#home-network)  
-- [TCP / UDP](#tcp--udp)  
-- [Port Communication](#port-communication)
+- [Variables](#variables)  
+- [Commandline arguments](#commandline-arguments)  
+- [System Variables](#system-variables)
 
 
 # Bash
@@ -95,7 +95,7 @@ ls /var/www/html/
 
 ```
 
-## Variables 
+# Variables 
 - Temporary storage in RAM
 - Editing previous script with the use of variables
 
@@ -156,7 +156,7 @@ sudo systemctl status $SVC
 ls /var/www/html/
 ```
 
-## CommandLine arguments
+# CommandLine arguments
 - Bash can take up to 9 cmd arguments $1 - $9
 ```bash
 #! /bin/bash
@@ -174,6 +174,47 @@ echo "Value of 3 is "
 echo $3
 ```
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/16b793ce-487f-42d7-9bd0-29c670cedfcd)
+
+# System variables
+- Random gives value 0 – 32767
+```bash
+$0               # Name of bash script
+$1-9             # cmd arguments
+$#               # How many arguments we passed to the script
+$@               # All args supplied to the bash script
+$?               # Exit satus code of most recent process/command             
+$$               # Process ID of the current script
+$USER            # Who is running script 
+$HOSTNAME        # Name of machine running the script
+$SECONDS         # Number of seconds passed from beginning of script
+$LINENO          # Current line number in the script                
+```
+
+# Quotes
+```bash
+#! /bin/bash
+SKILL= "DevOps # Same as 'DevOps BUT " " is prefered when the value is not predefined
+UP = 'uptime'  # uptime is predefined so we need ' ' to print the real value
+
+echo "i have got $SKILL skill" # Prints i have got DevOps skill
+echo 'i have got $SKILL skill' # Prints i have got $SKILL skill
+
+echo "i got \$9 dollars' # \ is a must to print the  $ symbol
+```
+
+Advanced
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/82b46dc8-2364-4d5d-9621-73d7bcefa978)  
+
+In this case we have already used " " and ' ' so we use ` ` for storing the entire string
+```bash
+#! /bin/bash
+MEM=`free -m | grep Mem | awk '{print $4}'`
+
+FREE_RAM=$(free -m | grep Mem | awk '{print $4}')
+echo $FREE_RAM
+
+```
+
 
 
 
