@@ -193,7 +193,7 @@ $LINENO          # Current line number in the script
 # Quotes
 ```bash
 #! /bin/bash
-SKILL= "DevOps # Same as 'DevOps BUT " " is prefered when the value is not predefined
+SKILL= "DevOps # Same as 'DevOps' BUT " " is prefered when the value is not predefined
 UP = 'uptime'  # uptime is predefined so we need ' ' to print the real value
 
 echo "i have got $SKILL skill" # Prints i have got DevOps skill
@@ -212,8 +212,10 @@ MEM=`free -m | grep Mem | awk '{print $4}'`
 
 FREE_RAM=$(free -m | grep Mem | awk '{print $4}')
 echo $FREE_RAM
-
 ```
+
+- ( set -o posix ; set ) | less  # Finds all variables
+- unset FREE_RAM # Deletes the variable
 
 
 
