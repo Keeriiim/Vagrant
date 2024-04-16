@@ -6,6 +6,8 @@
 - [Commandline arguments](#commandline-arguments)  
 - [System Variables](#system-variables)
 - [User Input](#user-input)
+- [Logical Operations](#logical-operations)
+
 
 
 # Bash
@@ -260,7 +262,7 @@ echo "Login Successfull: Welcome USER $USR"
 
 ```
 
-# Logical operations
+# Logical Operations
 ## Conditional (If / else)
 
 ```bash
@@ -286,6 +288,77 @@ echo "All arguments: $@"
 echo "Statuscode: $?"
 
 ```
+
+
+
+## For 
+```bash
+#!/bin/bash
+
+echo "#### Loop 1 ####"
+USRS="alpha beta gamma"
+
+for usr in $USRS
+ do
+    echo $USRS
+    echo $usr
+done
+echo "################"
+
+echo "#### Loop 2 ####"
+
+for VAR1 in java .net python ruby php
+ do
+    echo $VAR1
+done
+echo "################"
+```
+
+
+
+## While 
+```bash
+#!/bin/bash
+C=0
+while [ $C -lt 10 ]
+ do
+    echo $C
+    C=$(( $C + 1 ))
+ done
+```
+
+# Monitoring script
+
+```bash
+#!/bin/bash
+
+ls /var/run/httpd/httpd.pid &> /dev/null # Don't print success & error
+
+if [ $? -eq 0]; then              
+  echo "Httpd is up and running"
+else
+  echo "Service is not running"
+  echo "Starting the service"
+  systemctl start httpd
+  if [ $? -eq 0]; then              
+  echo "Httpd is up and running"
+else
+  echo "Serice failed to start, contact Admin"
+fi
+```
+
+## Monitor Plugin with crontab 
+- Open with crontab -e
+```bash
+# minute hour DateOfMonth Month DayOfWeek COMMAND
+# 30     20   *           *     1-5       COMMAND
+
+* * * * * /opt/scripts/monitor.sh >> /var/log/monit_httpd_log
+
+```
+
+
+
 
 
 
