@@ -5,6 +5,7 @@
 - [Variables](#variables)  
 - [Commandline arguments](#commandline-arguments)  
 - [System Variables](#system-variables)
+- [User Input](#user-input)
 
 
 # Bash
@@ -237,10 +238,54 @@ Adding export to .bashrc will make it permanent for this user
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/55a75f11-5367-455a-936f-c5d945b437f0)  
 
 Adding export to /etc/profile will make it permanent and global for ALL users  
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/64b1c140-93d1-47d4-8f8d-b146f1284748)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/64b1c140-93d1-47d4-8f8d-b146f1284748)  
 
 
+# User Input
+This is not recommended in DevOps bcz user input is always error prone
+```bash
+#!/bin/bash
 
+echo "Enter your skills:"
+read SKILL
+
+echo "Your $SKILL skills are in high demand"
+
+read -p 'Username: ' USR   # p - prompt, waiting for input
+read -sp 'Password: ' pass # sp - supress input, i.e dont show it
+
+echo
+
+echo "Login Successfull: Welcome USER $USR"
+
+```
+
+# Logical operations
+## Conditional (If / else)
+
+```bash
+#!/bin/bash
+
+read -p "Enter your number:" NBR   # 
+
+echo "Your number is $NBR "
+if [ $NBR -gt 100]; then            # Needs to be spaces around [ x y ]
+#then   # optional to remove ; and add then to next row  
+  echo "We have entered the if block"
+  echo "Your number is greater than 100"
+  echo
+  date
+else
+  echo "Your number was not greater than 100"
+fi
+
+echo "Execution ended successfully"
+echo "Process ID: $$"
+echo "Number of arguments: $#"
+echo "All arguments: $@"
+echo "Statuscode: $?"
+
+```
 
 
 
