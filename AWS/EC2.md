@@ -26,7 +26,7 @@ Provides you with flexible, cost effective & easy to use data storage for your i
 Its the virtual hard disk on wich you can store your operating system.
 
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 
