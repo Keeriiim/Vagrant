@@ -25,6 +25,7 @@ Secret @cc€ss key:
 ```
 
 ## AWS through bash
+- [Read](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 - Open bash
 ```bash
 aws configure
