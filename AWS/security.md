@@ -1,6 +1,7 @@
 
 
 # Introduktion
+[Read](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
 Security-groups are the virtual firewall for the cloud
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/0b9e7409-f805-4fd1-a1b0-10960009f62b)  
 
