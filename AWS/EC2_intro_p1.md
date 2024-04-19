@@ -65,6 +65,7 @@ Create - Download
 
 ## Key Pair  
 - Key pairs allow you to connect to your instance securely. [Read](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html?icmpid=docs_ec2_console#having-ec2-create-your-key-pair)
+- Good practice is 1 key-pair for stage (dev, QA, prod)
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4d0ef410-bd69-4f42-a17f-a21e8d0fa219)  
 
 - Rsa / ED25519
@@ -233,12 +234,20 @@ C:\Users\kerim\Downloads>curl http://54.152.95.201
 Delete Key Pairs
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/8a532d51-ea94-4f8e-863f-4f979379c046)  
 
-Terminate instances
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/408f5295-ed55-402e-bf2f-6d74b60a587c)  
+Terminate instances  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/408f5295-ed55-402e-bf2f-6d74b60a587c)    
 
 
-Delete sg group -> delete web-sg
+Delete sg group -> delete web-sg  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ee35e157-6684-4032-b9f2-31f2d1161b4f)
+
+
+
+# Project 2
+- Create new instance with new tags
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ce192bf9-9a7a-496a-97a6-b75af31e9139)
+- Ubuntu, free tier type, new SSH keypair, 
+
 
 
 Successfully created network interface eni-06e64d9882af0c5e8 var ???
