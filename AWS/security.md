@@ -9,4 +9,4 @@ Security-groups are the virtual firewall for the cloud
 - Inbound: Any traffic going to the instance
 - Outbound: Any traffic going from the instance
 - Any port opened for inbout will automatically work for outbound aswell.
-- 
+- Inbound rules can ONLY focus on PUBLIC HOST ADRESSES!, not private...for private use VPC
