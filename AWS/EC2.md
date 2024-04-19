@@ -124,3 +124,20 @@ cw5zejG8k3RRrwg4QwAAAEAwUQIBATAFBgMrZXAEIgQgtH3kTgKa/MB2SnhtjUos
 zv9AfG6xa13juMsYgxDJgWZkuatzDnN6MbyTdFGvCDhDAAAAAAECAwQF
 -----END OPENSSH PRIVATE KEY-----
 ```
+
+## Network
+- Press Edit to change the name etc
+- [Read](https://docs.aws.amazon.com/en_us/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html#CHAP_Tutorials.WebServerDB.CreateVPC.SecurityGroupEC2)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/841bcd31-fe5d-481f-820c-09c21e10990e)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a8ec00ee-b92e-446f-8b65-c69295244d08)
+
+## Storage
+- [Read](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html?icmpid=docs_ec2_console)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/c3c0dff8-e463-44f8-8f58-e7b03bf2c52f)
+
+## Advanced details
+- 
+
+
+
+
