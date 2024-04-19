@@ -42,7 +42,7 @@ Amazon EC2 uses public-key crytopgraphy to encripty and decrypt login informatio
 Create - Download
 
 - Linux: Use key for SSH
-- Windows: Use key to generate password  
+- Windows: Use key to generate password
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7d390428-f606-4fa8-8303-b30d58e10cc7)
 
 
@@ -55,7 +55,7 @@ Create - Download
 
   
 ## AMI
-- Choose AMI based on your needs (Linux, windows, x86 /arm, size/performance)  
+- Choose AMI based on your needs (Linux, windows, x86 /arm, size/performance)
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/fde223ca-54c9-4439-8e6d-55f8b643dd70)
 
 
@@ -127,16 +127,29 @@ zv9AfG6xa13juMsYgxDJgWZkuatzDnN6MbyTdFGvCDhDAAAAAAECAwQF
 
 ## Network
 - Press Edit to change the name etc
-- [Read](https://docs.aws.amazon.com/en_us/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html#CHAP_Tutorials.WebServerDB.CreateVPC.SecurityGroupEC2)
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/841bcd31-fe5d-481f-820c-09c21e10990e)
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a8ec00ee-b92e-446f-8b65-c69295244d08)
+- [Read](https://docs.aws.amazon.com/en_us/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html#CHAP_Tutorials.WebServerDB.CreateVPC.SecurityGroupEC2)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/841bcd31-fe5d-481f-820c-09c21e10990e)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a8ec00ee-b92e-446f-8b65-c69295244d08)  
 
 ## Storage
 - [Read](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html?icmpid=docs_ec2_console)
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/c3c0dff8-e463-44f8-8f58-e7b03bf2c52f)
 
 ## Advanced details
-- 
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7816d0fa-3612-457a-a9ff-eaa793820253)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/86c944aa-6fd0-4c17-a241-ae4409ae7474)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/443a480f-9446-48d1-b8a6-519058ffd273)  
+
+
+# Connect to instance
+- Find ur instance - > Press on Connect -> SSH Client
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7e8c2fef-bc2f-42b5-bdb0-2fc0e42ecbed)
+
+
+
+
+
 
 
 
