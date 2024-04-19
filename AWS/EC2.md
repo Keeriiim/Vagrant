@@ -48,7 +48,7 @@ Create - Download
 
 
 # Create instance
-- Create account -> Ec2 -> Launch instance
+- Create account -> Ec2 -> Launch instance [Read](https://aws.amazon.com/ec2/instance-types/)
 
 ## Tags  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d2845694-72d9-448f-8fec-7d3ab1a8b7c6)
@@ -144,6 +144,7 @@ zv9AfG6xa13juMsYgxDJgWZkuatzDnN6MbyTdFGvCDhDAAAAAAECAwQF
 
 # Connect to instance
 - Find ur instance - > Press on Connect -> SSH Client
+- Once the SSH is established, the communication is going through port 22 which if allowed, the rest will be allowed.
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7e8c2fef-bc2f-42b5-bdb0-2fc0e42ecbed)
 
 ## From Git Bash
@@ -156,7 +157,7 @@ Inside the SSH(port 22) you can browse localhost for the httpd
 
 ## From windows
 ```bash
-Outside SSH you can not browse because port 80 is not enabled in the AWS firewall
+Outside SSH you can not browse because HTTP is using port 80 which currently is not enabled in the AWS firewall
 
 C:\Users\kerim\Downloads>curl http://localhost
 curl: (7) Failed to connect to localhost port 80 after 2254 ms: Couldn't connect to server
@@ -169,12 +170,10 @@ curl: (1) Received HTTP/0.9 when not allowed
 
 C:\Users\kerim>curl https://54.152.95.201:22
 curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_INVALID_TOKEN (0x80090308) - The token supplied to the function is invalid
-
 ```
+
 Lets try to figure out with SSH
-````bash
-
-```
+```bash
 C:\Users\kerim>C:\Users\kerim>ssh http://54.152.95.201:22
 'C:\Users\kerim' is not recognized as an internal or external command,
 operable program or batch file.
@@ -213,9 +212,22 @@ Last login: Fri Apr 19 10:12:40 2024 from 78.82.182.26
 
 [ec2-user@ip-172-31-84-153 ~]$ curl http://localhost
 <html><body><h1>It works!</h1></body></html>
+```
 
 # Project
 - Installed Httpd
+- curl to localhost
+- Open port 80:   Ec2 -> instances -> web01 -> Security -> web-sg -> open sg groups  -> Edit inbout groups -> add port 80
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4df0ffe4-8873-49d1-a0d3-800ccdffb187)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/5302f95a-e705-4dd3-8f1e-137529479a9a)
+
+
+```bash
+C:\Users\kerim\Downloads>curl http://54.152.95.201
+<html><body><h1>It works!</h1></body></html>
+```
+
+
 
 
 
