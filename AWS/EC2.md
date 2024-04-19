@@ -26,7 +26,11 @@ Provides you with flexible, cost effective & easy to use data storage for your i
 Its the virtual hard disk on wich you can store your operating system.
 
 
-![alt text](image-1.png)
+
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/fc3b063c-515d-4a2c-9b07-dc85527015fe)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d2d9d672-1d73-40eb-b4ba-fdb4788221ee)
+
+
 
 
 
@@ -42,5 +46,4 @@ Create - Download
 
 - Linux: Use key for SSH
 - Windows: Use key to generate password  
-
-![alt text](image.png)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7d390428-f606-4fa8-8303-b30d58e10cc7)
