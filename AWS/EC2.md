@@ -25,9 +25,6 @@ When launcing, the type you specify determines the hardware of the host computer
 Provides you with flexible, cost effective & easy to use data storage for your instances.
 Its the virtual hard disk on wich you can store your operating system.
 
-
-
-![image](https://github.com/Keeriiim/Vagrant/assets/117115289/fc3b063c-515d-4a2c-9b07-dc85527015fe)
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d2d9d672-1d73-40eb-b4ba-fdb4788221ee)
 
 
