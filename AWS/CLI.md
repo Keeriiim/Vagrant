@@ -30,6 +30,7 @@ Secret @cc€ss key:
 # Configuration
 - [Read](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 - Open bash
+-  In order to make local changes, add SYSTEMADMINISTRATOR to policies
 ```bash
 aws configure
 AWS Access Key ID [None]: AKIA2UC3F56EWFM34LOH
