@@ -132,7 +132,7 @@ zv9AfG6xa13juMsYgxDJgWZkuatzDnN6MbyTdFGvCDhDAAAAAAECAwQF
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a8ec00ee-b92e-446f-8b65-c69295244d08)  
 
 ## Storage
-- [Read](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html?icmpid=docs_ec2_console)
+- [Read](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html?icmpid=docs_ec2_console)  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/c3c0dff8-e463-44f8-8f58-e7b03bf2c52f)
 
 ## Advanced details
@@ -145,6 +145,78 @@ zv9AfG6xa13juMsYgxDJgWZkuatzDnN6MbyTdFGvCDhDAAAAAAECAwQF
 # Connect to instance
 - Find ur instance - > Press on Connect -> SSH Client
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/7e8c2fef-bc2f-42b5-bdb0-2fc0e42ecbed)
+
+## From Git Bash
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/fdc2e05d-c803-4c57-900b-7f024130ab3a)  
+```bash
+Inside the SSH(port 22) you can browse localhost for the httpd
+[root@ip-172-31-84-153 ~]# curl http://localhost
+<html><body><h1>It works!</h1></body></html>
+```
+
+## From windows
+```bash
+Outside SSH you can not browse because port 80 is not enabled in the AWS firewall
+
+C:\Users\kerim\Downloads>curl http://localhost
+curl: (7) Failed to connect to localhost port 80 after 2254 ms: Couldn't connect to server
+
+C:\Users\kerim>curl http://localhost:22
+curl: (7) Failed to connect to localhost port 22 after 2247 ms: Couldn't connect to server
+
+C:\Users\kerim>curl http://54.152.95.201:22
+curl: (1) Received HTTP/0.9 when not allowed
+
+C:\Users\kerim>curl https://54.152.95.201:22
+curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_INVALID_TOKEN (0x80090308) - The token supplied to the function is invalid
+
+```
+Lets try to figure out with SSH
+````bash
+
+```
+C:\Users\kerim>C:\Users\kerim>ssh http://54.152.95.201:22
+'C:\Users\kerim' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kerim>C:\Users\kerim>ssh 54.152.95.201:22
+'C:\Users\kerim' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\kerim>ssh -p C:\Users\kerim>C:\Users\kerim>ssh 54.152.95.201:22
+Bad port 'C:\Users\kerim'
+
+STILL WRONG BUT APPROACHING THE CORRECT WAY: 
+C:\Users\kerim>ssh -p 22 54.152.95.201
+The authenticity of host '54.152.95.201 (54.152.95.201)' can't be established.
+
+GOIN TO THE DIRECTORY I HAVE THE KEY DOWNLOADED:
+C:\Users\kerim>cd Downloads
+
+C:\Users\kerim\Downloads>ssh -p 22 54.152.95.201
+kerim@54.152.95.201: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+
+CORRECT WAY:
+
+C:\Users\kerim\Downloads>ssh -p 22 -i "Linux_SSHkey_ED.pem" ec2-user@54.152.95.201
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Apr 19 10:12:40 2024 from 78.82.182.26
+
+[ec2-user@ip-172-31-84-153 ~]$ curl http://localhost
+<html><body><h1>It works!</h1></body></html>
+
+# Project
+- Installed Httpd
+
 
 
 
