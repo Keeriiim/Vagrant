@@ -237,7 +237,7 @@ Terminate instances
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/408f5295-ed55-402e-bf2f-6d74b60a587c)  
 
 
-g group
+Delete sg group -> delete web-sg
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ee35e157-6684-4032-b9f2-31f2d1161b4f)
 
 
