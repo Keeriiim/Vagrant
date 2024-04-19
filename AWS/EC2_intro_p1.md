@@ -1,5 +1,7 @@
 - [Ec2](#ec2)
 - [Create instance](#create-instance)
+- [Project 1](#project-1)
+- [Delete](#delete)
 
 
 
@@ -214,7 +216,7 @@ Last login: Fri Apr 19 10:12:40 2024 from 78.82.182.26
 <html><body><h1>It works!</h1></body></html>
 ```
 
-# Project
+# Project 1
 - Installed Httpd
 - curl to localhost
 - Open port 80:   Ec2 -> instances -> web01 -> Security -> web-sg -> open sg groups  -> Edit inbout groups -> add port 80
@@ -226,6 +228,20 @@ Last login: Fri Apr 19 10:12:40 2024 from 78.82.182.26
 C:\Users\kerim\Downloads>curl http://54.152.95.201
 <html><body><h1>It works!</h1></body></html>
 ```
+
+# Delete
+Delete Key Pairs
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/8a532d51-ea94-4f8e-863f-4f979379c046)  
+
+Terminate instances
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/408f5295-ed55-402e-bf2f-6d74b60a587c)  
+
+
+g group
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/ee35e157-6684-4032-b9f2-31f2d1161b4f)
+
+
+Successfully created network interface eni-06e64d9882af0c5e8 var ???
 
 
 
