@@ -37,6 +37,66 @@ There are different types of harddisks..
 5. Magnetic (lowest I/O & cost)
    Use cases:
      * Backups & Archives
+  
+
+
+## EBS on AWS
+This is the same as Ec2 - > Elastic Block Store -> Volumes 
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/dece0176-ba92-4962-b1aa-26cfc1858a44)  
+- Rename the volume to ec2Name-ROOT-Volume (ex webbserver-ROOT-Volume)
+- SAME AZ as ec2 instance
+
+
+- Create Volume & Attach  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/bcfa8439-d13a-4e6f-b9ea-47f9497f714e)
+
+
+## Linux command for disks
+- ***fdisk -l***    # Lists all disks 
+- ***df -h***    # Show partitions  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/700962b5-077d-40f2-a23c-f91a96babeb0)  
+
+### New partition
+- Go to your disk
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/646ebdc5-f010-433c-82b8-e174f3bd9278)  
+- fdisk /dev/DISKNAME , press m from more info
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/bc784bb5-38d8-4cdc-aa7e-65b72eb93902)
+- n, p, 1, enter for default, last sector is to specify size +3 is to allocate 3GB.  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/3c31572e-813d-4aee-9ca9-4a5c78ffdd64)
+- P to print, w to write  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4f8810e9-0d61-463f-b0b4-6e82245ddb01)
+- Partition created fdisk -l  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/9a40b618-7d54-4b6d-9dde-cf8190994915)
+
+## Formating
+- ***find / -name "mkfs.*" -type f -executable***    #shows the different mkfs to use
+- mkfs is to create a filesystem
+- ***mkfs.ext4 /dev/xvdf1***  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/43117c94-4824-4eae-a6b7-0464acda9a15)  
+
+- Temporary mount that dissapears when relog.  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/545b52d2-bc7b-4d25-b9da-85749b4e039b)  
+
+- ***vi /etc/fstab***  
+is a crucial configuration file for managing filesystems and their mount points in Unix-like operating systems. Administrators often edit this file to add, remove, or modify filesystem entries based on changes in hardware configuration or system requirements
+Partition part /tab/ mount location /tab/ formatType /tab/ options /tab/ dumpcode space file-system-check
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f3255ec0-f08c-4380-a172-8ec7c9824037)
+- When done write mount -a , if u did something wrong u will get the error there
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Snapshot
 - Backup of the entire volume
