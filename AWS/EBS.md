@@ -44,7 +44,7 @@ There are different types of harddisks..
 This is the same as Ec2 - > Elastic Block Store -> Volumes 
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/dece0176-ba92-4962-b1aa-26cfc1858a44)  
 - Rename the volume to ec2Name-ROOT-Volume (ex webbserver-ROOT-Volume)
-- SAME AZ as ec2 instance
+- SAME AZ as ec2 instance (ex: us-east-1d)
 
 
 - Create Volume & Attach  
@@ -85,6 +85,20 @@ Partition part /tab/ mount location /tab/ formatType /tab/ options /tab/ dumpcod
 - df -h to check if all is done, after restart service  
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d4d62195-ab4d-40a8-9f41-76164009ca2b)
 
+
+## Unmount & delete
+```bash
+dh -h                     # Lists partitions linked to directories
+umount /directory/dir1    # If there is an error, go to the directory and check running processes
+cd /directory/dir1
+lsof /directory/dir1      # Will show all running processes -> kill them before umount
+umount /directory/dir1
+```
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/751bfb84-e90c-4def-af73-d6dc4548bc09)  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/a2ff1ff8-4d65-4e27-8180-aa65e8caa854)
+
+- Go to AWS -> detach -> delete
+
 - vi /etc/selinux/config -> disable it if you need (not seeing images)
 - reboot
 
@@ -96,15 +110,17 @@ Partition part /tab/ mount location /tab/ formatType /tab/ options /tab/ dumpcod
 
 
 
-
-
-
-
-
-
-
-
 # Snapshot
-- Backup of the entire volume
-
+- Backup of the entire volume by creating a new
+- Used for recovering data, changing volumr type, changing size, move from AZ to AZ, encrypt / unencrypt
+- 
+```bash
+1. Before making changes -> create snapshot
+Make the changes , if u need to recover :
+2. Stop the services
+3. umount /directory/dir1
+4. Renmame current failed EBS to -corrupted & detach it
+5. Go to snapshot -> CREATE Volume
+6. mount -a
+```
 
