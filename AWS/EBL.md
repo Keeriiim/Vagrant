@@ -177,9 +177,38 @@ Launch Template
 
 
 
-## Create loadbalancer betwen two instances
+## loadbalancer between two instances in the same AZ
 - Create Target Group: Choose name & port to route through
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/659d7460-a52b-470c-9c93-5d6afabd22f7)
+
+- Create load balancer
+- Edit the security group of the load balancer to allow traffic from everywhere (that's it job)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/208acf59-ff93-4eb6-8167-142ec78dec4d)  
+- Add listening (should be health-elb)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/6d6f1734-8f0c-4b71-934b-79a110588f10)
+
+- Check/attach/detach security groups associated with the load balancer
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f388d778-9e7b-4b6e-bf46-340a0368c620)
+
+- Last step is to allow traffic FROM load balancer into the application  
+  So we have to edit the security group connected to the instances
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/4e8bd1c8-a6c3-4c30-871b-b0a223c7cdea)
+
+
+- Now we wait for the health check, then we can access the loadbalancer.  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/dae6958d-992e-4ca3-b82c-332d23615762)
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f523d725-ae98-491a-a548-5d2148834fda)
+
+- Browse DNS name
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/565439e2-e888-4974-84ae-b81d153509be)
+
+
+
+
+
+
+
+
 
 
 
