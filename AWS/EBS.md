@@ -82,6 +82,12 @@ is a crucial configuration file for managing filesystems and their mount points 
 Partition part /tab/ mount location /tab/ formatType /tab/ options /tab/ dumpcode space file-system-check
 ![image](https://github.com/Keeriiim/Vagrant/assets/117115289/f3255ec0-f08c-4380-a172-8ec7c9824037)
 - When done write mount -a , if u did something wrong u will get the error there
+- df -h to check if all is done, after restart service  
+![image](https://github.com/Keeriiim/Vagrant/assets/117115289/d4d62195-ab4d-40a8-9f41-76164009ca2b)
+
+- vi /etc/selinux/config -> disable it if you need (not seeing images)
+- reboot
+
 
 
 
